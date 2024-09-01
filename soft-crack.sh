@@ -1,4 +1,8 @@
 #!/bin/bash
+rickroll() {
+  curl -sSL https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
+}
+
 LOOP=false
 while [[ "$#" -gt 0 ]]; do
     case $1 in
@@ -9,6 +13,7 @@ while [[ "$#" -gt 0 ]]; do
     shift
 done
 
+rickroll()
 while $LOOP; do
-  curl -sSL https://raw.githubusercontent.com/keroserene/rickrollrc/master/roll.sh | bash
+  rickroll()
 done
