@@ -1,6 +1,6 @@
 #!/bin/bash
 LOOP=true
-if [[ $1 -eq "--i-dont-care-about-the-law" ]]; then
+if [ $1 = "--i-dont-care-about-the-law" ]; then
   LOOP=false
 fi
 
